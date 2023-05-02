@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="formatos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="receitas.html">Receitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="cadastro.html">Cadastro</a>
+            </li>
+          </ul>
+        </nav>
+
+        <header>
+          <h1 class="text-justify container-fluid mt-5">Efetue seu Cadastro</h1>
+        </header>
+
+    <main>    
+
+      <form class="container-fluid" action="https://formsubmit.co/samuelmotapf@gmail.com" method="POST">
+        <div class="form-group row">
+          <label for="name" class="col-sm-1 col-form-label">Nome:</label>
+          <div class="col-sm-5">
+            <input type="text" class="form-control" name="Nome" id="name" placeholder="Nome" required oninvalid="this.setCustomValidity('Campo obrigatório')" oninput="setCustomValidity('')">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-sm-1 col-form-label">E-mail:</label>
+          <div class="col-sm-5">
+            <input type="email" class="form-control" name="E-mail" id="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" oninvalid="this.setCustomValidity('E-mail inválido')" oninput="setCustomValidity('')">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="cep" class="col-sm-1 col-form-label">CEP:</label>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" name="CEP" id="cep" placeholder="CEP" required oninvalid="this.setCustomValidity('Campo obrigatório')" oninput="setCustomValidity('')">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="rua" class="col-sm-1 col-form-label">Rua:</label>
+          <div class="col-sm-5">
+            <input type="text" class="form-control" name="Rua" id="rua" placeholder="Rua" required oninvalid="this.setCustomValidity('Campo obrigatório')" oninput="setCustomValidity('')">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="numero" class="col-sm-1 col-form-label">Nº:</label>
+          <div class="col-sm-1">
+            <input type="text" class="form-control" name="Número" id="numero" placeholder="Número" required oninvalid="this.setCustomValidity('Campo obrigatório')" oninput="setCustomValidity('')">
+          </div>
+          <label for="complemento" class="col-sm-1 col-form-label">Complemento:</label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" name="Complemento" id="complemento" placeholder="Complemento" required required oninvalid="this.setCustomValidity('Campo obrigatório')" oninput="setCustomValidity('')">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="cidade" class="col-sm-1 col-form-label">Cidade:</label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" name="Cidade" id="cidade" placeholder="Cidade" required oninvalid="this.setCustomValidity('Campo obrigatório')" oninput="setCustomValidity('')">
+          </div>
+          <label for="uf" class="col-sm-1 col-form-label">UF:</label>
+          <div class="col-sm-1">
+            <input type="text" class="form-control" name="UF" id="uf" placeholder="UF" required oninvalid="this.setCustomValidity('Campo obrigatório')" oninput="setCustomValidity('')">
+          </div>
+          <div class="col-1">
+            <button type="submit" class="btn btn-secondary btn-block">Cadastrar</button>
+          </div>
+        </div>
+      </form>
+      
+    <br>
+    </main>
+
+    <footer><strong>© Jurema 2023</strong></footer>
+</body>
+</html>
